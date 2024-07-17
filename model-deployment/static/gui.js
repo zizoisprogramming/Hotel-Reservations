@@ -107,23 +107,3 @@ predictButton.addEventListener('click', (e) => {
     .catch((error) => console.log('Error:', error));
   }
 });
-
-/* ['repeated', 'car parking space', 'room type_Room_Type 1',
-'room type_Room_Type 2', 'room type_Room_Type 3',
-'room type_Room_Type 4', 'room type_Room_Type 5',
-'room type_Room_Type 6', 'room type_Room_Type 7',
-'type of meal_Meal Plan 1', 'type of meal_Meal Plan 2',
-'type of meal_Meal Plan 3', 'type of meal_Not Selected',
-'market segment type_Aviation', 'market segment type_Complementary',
-'market segment type_Corporate', 'market segment type_Offline',
-'market segment type_Online', 'lead_time', 'P-not-C', 'average_price',
-'special_requests', 'num_adults', 'num_children', 'total_num',
-'num_weekend', 'num_week', 'total_nights', 'year', 'month', 'arrived']*/
-
-/*
-  'booking-id-field', 'adults-field', 'children-field','weekend-nights-field','week-nights-field',
-  'p-c-field','p-not-c-field','average-price-field','special-requests-field','reservation-date-field',
-  'meal-type-field','room-type-field','market-segment-field',
-  'car-parking-field','lead-time-field','repeated-field'
-
-*/

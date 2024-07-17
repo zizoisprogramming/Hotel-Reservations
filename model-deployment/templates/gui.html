@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='gui.css')}}">
+        <meta charset="utf-8" />
+        <title>Model Deployment</title>
+    </head>
+
+    <body>
+        <header>
+            <h1 id="animated-text">Welcome to the hotel reservation predictor!</h1>
+        </header>
+        <div class="container">
+          <div class="text-box">
+            <div class="booking-id-field">
+              <label>Booking ID:</label>
+              <input type="number" name="id"/>
+            </div>
+            <div class="adults-field">
+              <label>Number of adults:</label>
+              <input type="number" name="num-adults"/>
+            </div>
+            <div class="children-field">
+              <label>Number of children:</label>
+              <input type="number" name="num-children"/>
+            </div>
+            <div class="weekend-nights-field">
+              <label>Number of weekend nights:</label>
+              <input type="number" name="weekend-nights"/>
+            </div>
+            <div class="week-nights-field">
+              <label>Number of week nights:</label>
+              <input type="number" name="week-nights"/>
+            </div>
+        </div>
+          <div class="text-box-2">
+            <div class="p-c-field">
+              <label>P-C:</label><br>
+              <input type="number" name="p-c"/>
+            </div>
+            <div class="p-not-c-field">
+              <label>P-not-C:</label><br>
+              <input type="number" name="p-not-c"/>
+            </div>
+            <div class="average-price-field">
+              <label>Average price:</label><br>
+              <input type="number" name="avg-price"/>
+            </div>
+            <div class="special-requests-field">
+              <label>Special requests:</label><br>
+              <input type="number" name="special-requests"/>
+            </div>
+            <div class="reservation-date-field">
+              <label>Date of reservation:</label><br>
+              <input type="date" name="date"/>
+            </div>
+        </div>
+        <div class="drop-down">
+            <div class="meal-type-field">
+              <label>Type of meal:</label><br>
+              <select style="width: 200px;" name="meal">
+                <option value="0">Meal Plan 1</option>
+                <option value="1">Meal Plan 2</option>
+                <option value="2">Meal Plan 3</option>
+                <option value="3">Not Selected</option>
+              </select>
+            </div>
+            <div class="room-type-field">
+              <label>Room type:</label><br>
+              <select style="width: 200px;" name="room">
+                <option value="0">Room Type 1</option>
+                <option value="1">Room Type 2</option>
+                <option value="2">Room Type 3</option>
+                <option value="3">Room Type 4</option>
+                <option value="4">Room Type 5</option>
+                <option value="5">Room Type 6</option>
+                <option value="6">Room Type 7</option>
+              </select>
+            </div>
+            <div class="market-segment-field">
+              <label>Market segment type:</label><br>
+              <select style="width: 200px;" name="market">
+                <option value="0">Aviation</option>
+                <option value="1">Complementary</option>
+                <option value="2">Corporate</option>
+                <option value="3">Offline</option>
+                <option value="4">Online</option>
+              </select>
+            </div>
+          </div>
+          <div class="check-box">
+            <div class="car-parking-field">
+              <label>Car parking space:</label>
+              <input type="checkbox" name="car_parking_space" value="true" />
+            </div>
+            <div class="lead-time-field">
+              <label>Lead time:</label>
+              <input type="text" name="lead_time"/>
+            </div>
+            <div class="repeated-field">
+              <label>Repeated:</label>
+              <input type="checkbox" name="repeated" value="true" />
+            </div>
+          </div>
+          <button class="button">
+            Predict.
+          </button>
+          <div class="result">
+            <label>Result:</label>
+            <input type="text" id="result-tex" name="res" readonly>
+          </div>
+          </div>
+
+          <script src="{{ url_for('static', filename='gui.js') }}"></script>
+    </body> 
+
+</html>
